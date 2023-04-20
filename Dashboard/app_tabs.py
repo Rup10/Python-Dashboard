@@ -5,7 +5,7 @@ import app_navbar as nb
 
 tab1 = dbc.Card(
     dbc.CardBody([
-        html.P("this is tab 1", className="card-text"),
+        html.P(id="tab1_output", children="this is tab 1", className="card-text"),
         html.Div(nb.nav1)
 
     ]), className="mt-3"

@@ -58,15 +58,15 @@ app.layout = html.Div([
     #         )
     #     ]
     # )
-    dbc.Tabs(
-
-        [
-            dbc.Tab(tp.tab1, label="Tab 1"),
-            dbc.Tab(tp.tab2, label="Tab 2"),
-        ],
-        id="app1-tabs"
-
-    )
+    # dbc.Tabs(
+    #
+    #     [
+    #         dbc.Tab(tp.tab1, label="Tab 1"),
+    #         dbc.Tab(tp.tab2, label="Tab 2"),
+    #     ],
+    #     id="app1-tabs"
+    #
+    # )
     # html.Div(
     #     className="app1-sidebar",
     #     children=[
@@ -108,6 +108,14 @@ app.layout = html.Div([
     # )
 
 ])
+# @app.callback(
+#     Output('tab1_output', "children"),
+#     [Input("drop1", "value")]
+# )
+# def show_output(n):
+#     if n:
+#         return f'selected values is {n}'
+
 
 
 if __name__ == '__main__':

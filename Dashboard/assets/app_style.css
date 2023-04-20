@@ -1,4 +1,10 @@
-.app1-sidebar {
+#nav_row {
+    border: 4px ridge;
+    height: auto;
+}
+
+
+/*.app1-sidebar {
     width: 120px;
     border-bottom: thin Blue solid;
 }
@@ -11,8 +17,16 @@
 
 #nav-1 {
     width: 200px;
+    min-height: 750px;
+    height: 600px;
+    background-color: white;
+    border: 4px ridge;
 }
 
-#drop1 {
-    width: 50%;
+#nav-1 #drop1 {
+    width: 180px;
+}
+
+.nav_item1 {
+    padding-left: 5px;
 }

@@ -3,9 +3,7 @@ import plotly.express as px
 
 long_df = px.data.medals_long()
 nations = list(map(str, long_df["nation"].unique()))
-
 class Barclass:
-
     def __init__(self, name, age):
         self.name = name
         self.age = age

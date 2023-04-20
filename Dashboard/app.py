@@ -45,7 +45,7 @@ app.layout = html.Div([
 
             dbc.Col(
                  html.Div(
-                     
+
                         [
                             html.H4("Columns"),
                             dcc.Dropdown(

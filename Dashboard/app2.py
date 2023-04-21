@@ -24,7 +24,7 @@ app.layout = html.Div([
             [
                 dbc.Col(
                     [
-                    
+
                     ], width=6
                 ),
 

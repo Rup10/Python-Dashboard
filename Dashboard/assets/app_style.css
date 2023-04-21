@@ -1,10 +1,15 @@
-#nav_row {
-    border: 4px ridge;
-    height: auto;
+#tool-image {
+    height: 200px;
 }
 
 
-/*.app1-sidebar {
+/*#nav_col {
+    border: 4px ridge;
+    height: 800px;
+}
+
+
+.app1-sidebar {
     width: 120px;
     border-bottom: thin Blue solid;
 }
@@ -30,3 +35,4 @@
 .nav_item1 {
     padding-left: 5px;
 }
+*/

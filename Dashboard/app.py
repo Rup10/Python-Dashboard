@@ -25,22 +25,11 @@ app.layout = html.Div([
                 html.Div(
                     [
                         html.H4("Columns"),
-                        dcc.Dropdown(
-                            ["1", "2", "3"],
-                            id="drop1",
-                            multi=True
-
-                        ),
+                        dcc.Dropdown(["1", "2", "3"], id="drop1", multi=True),
                         html.H4("Columns 2"),
-                        dcc.Dropdown(
-                            ["1", "2", "3"],
-                            id="drop1",
-                            multi=True
-
-                        )
+                        dcc.Dropdown(["1", "2", "3"], id="drop2", multi=True)
                     ]
-                ), width=2,
-                id="nav_row"
+                ), id="nav_col", width=2
             ),
 
             dbc.Col(
@@ -48,27 +37,13 @@ app.layout = html.Div([
 
                         [
                             html.H4("Columns"),
-                            dcc.Dropdown(
-                                ["1", "2", "3"],
-                                id="drop1",
-                                multi=True
-
-                            ),
-                    ]
-                )
+                            dcc.Dropdown(["1", "2", "3"], id="drop1", multi=True),
+                        ]
+                 )
             )
         ]
     )
-    #
-    # html.Div(
-    #     [
-    #         nb.nav1
-    #     ]
-    #
-    # ),
-    # html.Div([
-    #     html.P("dasdd asd ")
-    # ])
+
 ])
 # @app.callback(
 #     Output('tab1_output', "children"),

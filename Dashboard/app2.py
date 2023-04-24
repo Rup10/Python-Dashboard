@@ -25,10 +25,10 @@ app.layout = html.Div([
                 dbc.Col(
                     [
 
-                    ], width=6
+                    ], id="col-1",  width=12
                 ),
 
-            ]
+            ], id='row-1'
         )
 
 

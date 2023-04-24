@@ -2,6 +2,13 @@
     height: 200px;
 }
 
+#row-1 {
+    height: 100px;
+}
+
+#col-1 {
+    border: 2px solid black;
+}
 
 /*#nav_col {
     border: 4px ridge;

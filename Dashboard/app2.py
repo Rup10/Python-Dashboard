@@ -14,22 +14,66 @@ import app_tabs as tp
 import app_navbar as nb
 
 x = bar_gph.Barclass('a', 'b')
-external_stylesheet = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-app = Dash(__name__, external_stylesheets=[external_stylesheet])
+external_stylesheet1 = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+external_stylesheet2 = "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/styles/tomorrow-night-eighties.min.css"
+external_stylesheet3 = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+app = Dash(__name__, external_stylesheets=[external_stylesheet1, external_stylesheet2, external_stylesheet3])
 
 
 app.layout = html.Div([
-
         dbc.Row(
             [
-                dbc.Col(
+                html.Div(
                     [
+                        dbc.Col(
+                            [
+                                html.Div(
+                                    [
+                                        html.Button(children="", id='bt-1', className="bt-all"),
+                                        html.Button(children="", id='bt-1', className="bt-all"),
+                                        html.Button(children="", id='bt-1', className="bt-all")
 
-                    ], id="col-1",  width=12
-                ),
-
-            ], id='row-1'
+                                    ]
+                                )
+                            ], className='cl-1', width=4, lg=4
+                        )
+                    ]
+                )
+            ], className='rw-1'
         )
+
+        # dbc.Row(
+        #     [
+        #         dbc.Col(
+        #             [
+        #                 dbc.ButtonGroup(
+        #                     [dbc.Button(name='pie', className='BG-1'),
+        #                      dbc.Button("Line", className='BG-1'),
+        #                      dbc.Button("Bar", className='BG-1'), ], size='md'
+        #                 ),
+        #                 dbc.ButtonGroup(
+        #                     [dbc.Button("Pie", className='BG-1'),
+        #                      dbc.Button("Line", className='BG-1'),
+        #                      dbc.Button("Bar", className='BG-1'), ], size='md'
+        #                 ),
+        #                 dbc.ButtonGroup(
+        #                     [dbc.Button("Pie", className='BG-1'),
+        #                      dbc.Button("Line", className='BG-1'),
+        #                      dbc.Button("Bar", className='BG-1'), ], size='md'
+        #                 )
+        #             ], id="col-1",  width=3, lg=2,
+        #         ),
+        #
+        #         # dbc.Col(
+        #         #     [
+        #         #         dbc.ButtonGroup(
+        #         #             [dbc.Button("Pie"), dbc.Button("Line"), dbc.Button("Bar"), ], size='md'
+        #         #         )
+        #         #     ], id='col-2', width=12
+        #         # )
+        #
+        #     ], id='row-1'
+        # )
 
 
 ])

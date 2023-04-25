@@ -1,16 +1,33 @@
+.bt-all {
+    font-size: 10px;
+    height: 30px;
+    width: 50px;
+    margin-right: 5px;
+    background-image: url("https://images.ctfassets.net/pdf29us7flmy/5g5AoxUjgATAsZAq9pzq2H/cb0c23bc4e9450106e2729def3289b0e/bar-chart-histogram-1.png?w=720&q=100&fm=jpg")
+
+}
+
+.rw-1 div {
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+
 #tool-image {
     height: 200px;
 }
 
 #row-1 {
     height: 100px;
+
 }
 
 #col-1 {
     border: 2px solid black;
 }
 
-/*#nav_col {
+/*
+#nav_col {
     border: 4px ridge;
     height: 800px;
 }

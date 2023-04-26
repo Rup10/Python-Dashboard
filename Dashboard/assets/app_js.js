@@ -22,7 +22,11 @@ function showCoords(event) {
   let y = event.clientY;
   let text = "X coords: " + x + ", Y coords: " + y;
   alert(text);
-}
+};
+
+//function clicked() {
+//  document.getElementById("bt-1").innerHTML = "Hello World";
+//}
 
 
 //function printMousePos() {

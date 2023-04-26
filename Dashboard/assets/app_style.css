@@ -1,9 +1,49 @@
+.btn_grp .bt1_hov {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn_grp .bt1_hov::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.btn_grp:hover .bt1_hov {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.fa {
+    font-size: 35px;
+    margin-right: 5px;
+}
+
+
 .bt-all {
     font-size: 10px;
     height: 30px;
     width: 50px;
     margin-right: 5px;
-    background-image: url("https://images.ctfassets.net/pdf29us7flmy/5g5AoxUjgATAsZAq9pzq2H/cb0c23bc4e9450106e2729def3289b0e/bar-chart-histogram-1.png?w=720&q=100&fm=jpg")
+    background-image: url("https://www.flaticon.com/free-icons/curve")
 
 }
 

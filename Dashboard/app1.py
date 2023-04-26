@@ -53,7 +53,8 @@ app.layout = html.Div([
                            'padding-top': '2px', 'padding-bottom': '2px'}),
 
         dbc.Col([
-            html.P(id='out-id', children=['output-'])
+            html.P(id='out-id', children=['output-']),
+
 
         ], width=3, style={'border': '2px solid'}),
 
